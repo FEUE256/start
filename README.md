@@ -6,7 +6,7 @@ The website serves as the primary platform to present FÈUE’s mission, project
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). See the LICENSE file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). See the [LICENSE](https://feue256.github.io/start/LICENSE) file for details.
 
 ## Contact
 
