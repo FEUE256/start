@@ -1,0 +1,197 @@
+/* Font loading */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../../assets/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Reset and base styling */
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo */
+#logo {
+    width: 75px;
+}
+
+#fss-logo {
+    width: 30px;
+    height: 30px; 
+    vertical-align: middle;
+}
+
+#navigator {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+/* Shortcut menu */
+.shortcuts {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button styling */
+.dropbtn {
+    padding: 10px 16px;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hover effects */
+.dropdown-content a:hover {
+    background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+#main-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ===== Main content layout ===== */
+#main-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+#main-content h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#main-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#main-content a {
+  color: #7cc0ff;
+  text-decoration: none;
+}
+
+#main-content a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Section Styling ===== */
+#main-content section {
+  background-color: #2a2a2a;
+  border-left: 4px solid #4fa3ff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#main-content section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#main-content section p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.black {
+    color: #000;
+}
