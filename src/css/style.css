@@ -208,6 +208,9 @@ html, body {
   color: #000;
 }
 
+#main p {
+  color: white;
+}
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
 
 /* Mobiltelefoner (Galaxy A21s, S24, etc) */
