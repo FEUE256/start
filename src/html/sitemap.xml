@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Startsida -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/index.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/contact.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Generell sida -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/gen.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hjälp -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/help.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Integritetspolicy -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/privacy.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Terms of Use -->
+  <url>
+    <loc>https://feue256.github.io/start/src/html/tou.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
