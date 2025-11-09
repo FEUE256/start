@@ -22,7 +22,7 @@ tarteaucitron.init({
           "iconSrc": "https://feue256.github.io/start/assets/images/webp/logo.webp", /* Optionnal: URL or base64 encoded image */
           "iconPosition": "BottomRight", /* Position of the cookie (BottomRight - BottomLeft - TopRight - TopLeft) */
 
-    	  "adblocker": true, /* Show a Warning if an adblocker is detected */
+    	  "adblocker": false, /* Show a Warning if an adblocker is detected */
                            
           "DenyAllCta" : true, /* Show the deny all button */
           "AcceptAllCta" : true, /* Show the accept all button */
