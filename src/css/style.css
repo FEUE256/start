@@ -26,6 +26,12 @@ html, body {
   color: #ddd;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 /* ===== Logo ===== */
 #logo {
   width: 75px;
