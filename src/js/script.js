@@ -1,7 +1,7 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
- document.getElementsByClass('alert').forEach(li => {
-        li.addEventListener('click', () => {
-            alert(li.textContent);
-        });
+document.querySelectorAll('.alert').forEach(li => {
+    li.addEventListener('click', () => {
+        alert(li.textContent);
     });
+});
