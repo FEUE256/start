@@ -228,6 +228,131 @@ html, body {
 #main{
   color: white;
 }
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Mobiltelefoner (Galaxy A21s, S24, etc) */
+@media (max-width: 600px) {
+  #navigator {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dropbtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 14px;
+    height: auto;
+  }
+  .shortcuts {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  #main-content {
+    margin: 20px 10px;
+    padding: 0 10px;
+  }
+  #logo {
+    width: 50px;
+  }
+  #fss-logo {
+    width: 24px;
+    height: 24px;
+  }
+  #main-content h1 {
+    font-size: 1.8em;
+  }
+  #main-content p,
+  #main-content section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Surfplattor */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #navigator {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .dropbtn {
+    font-size: 16px;
+    min-width: 180px;
+  }
+  .shortcuts {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  #main-content {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+}
+
+/* Datorer */
+@media (min-width: 1025px) and (max-width: 1920px) {
+  #navigator {
+    justify-content: space-between;
+  }
+  #main-content {
+    max-width: 900px;
+  }
+  .shortcuts {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    top: 10px;
+  }
+}
+
+/* TV (extra stor skärm + fjärrkontroll) */
+@media (min-width: 1921px) {
+  body {
+    font-size: 22px; /* Större text */
+  }
+  #navigator {
+    padding: 30px 60px;
+  }
+  .dropbtn {
+    min-width: 280px;
+    padding: 20px 30px;
+    font-size: 22px;
+    height: auto;
+  }
+  .dropdown-content a {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+  #main-content {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 60px;
+  }
+  #main-content section {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  .shortcuts {
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+  #logo {
+    width: 100px;
+  }
+  #fss-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 img:hover {
     transform: scale(1.05);
@@ -256,4 +381,4 @@ body {
     }
     a:hover {
         text-decoration: underline;
-    }
+  }
