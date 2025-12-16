@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>FÈUE – Research, Systems & Theory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO -->
     <meta name="description" content="FÈUE is an independent research initiative in electronics, operating systems, and theoretical physics.">
     <meta name="robots" content="index, follow">
 
@@ -21,10 +19,9 @@
             --maxw: 1100px;
         }
 
-        * { box-sizing: border-box; }
+        * { box-sizing: border-box; margin:0; padding:0; }
 
         body {
-            margin: 0;
             font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
             background: var(--bg);
             color: var(--fg);
@@ -37,30 +34,31 @@
         header {
             border-bottom: 1px solid var(--border);
             background: #0f0f12;
+            padding: 1.5rem 0;
         }
 
         .header-wrap {
             max-width: var(--maxw);
             margin: 0 auto;
-            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .brand {
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-bottom: 1rem;
         }
 
-        .brand img {
-            width: 48px;
-            height: 48px;
-        }
+        .brand img { width: 48px; height: 48px; }
 
         .shortcuts {
-            margin-top: 1.2rem;
             display: flex;
             flex-wrap: wrap;
             gap: 0.75rem;
+            justify-content: center;
         }
 
         .shortcut-btn {
@@ -71,6 +69,7 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.95rem;
+            transition: 0.2s all;
         }
 
         .shortcut-btn:hover {
@@ -84,13 +83,11 @@
             padding: 3.5rem 1.5rem;
         }
 
-        section {
-            margin-bottom: 5rem;
-        }
+        section { margin-bottom: 5rem; }
 
-        h1 { font-size: 2.7rem; margin-top: 0; }
+        h1 { font-size: 2.7rem; margin-bottom: 1rem; }
         h2 { font-size: 2rem; margin-bottom: 1rem; }
-        h3 { font-size: 1.35rem; }
+        h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 
         .grid {
             display: grid;
@@ -103,6 +100,11 @@
             background: #101015;
             border-radius: 8px;
             padding: 2rem;
+            transition: 0.2s all;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
         }
 
         footer {
@@ -121,23 +123,42 @@
             gap: 2rem;
         }
 
-        .footer-container strong {
-            color: var(--fg);
-        }
+        .footer-container strong { color: var(--fg); }
 
         .footer-bottom {
             text-align: center;
             padding: 1rem;
             border-top: 1px solid var(--border);
         }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            padding: 0.5rem 1rem;
+            background: var(--accent);
+            color: var(--bg);
+            z-index: 1000;
+        }
     </style>
 </head>
 
 <body>
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <header>
-    <center>
-        <div class="header-wrap">
+    <div class="header-wrap">
         <div class="brand">
             <img src="../../assets/images/webp/logo.webp" alt="FÈUE logo">
             <strong>FÈUE</strong>
@@ -151,7 +172,6 @@
             <button class="shortcut-btn" onclick="location.href='./contact.html'">Contact</button>
         </nav>
     </div>
-    </center>
 </header>
 
 <main id="main">
