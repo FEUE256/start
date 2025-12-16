@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FÈUE | Research & Systems</title>
+    <title>FÈUE – Research & Systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Core SEO -->
-    <meta name="description" content="FÈUE conducts research in electronics, operating systems, and theoretical science.">
-    <meta name="author" content="FÈUE">
+    <!-- SEO -->
+    <meta name="description" content="FÈUE – advanced research in electronics, operating systems, and theoretical physics.">
     <meta name="robots" content="index, follow">
 
-    <!-- Visual identity -->
     <link rel="icon" href="../../assets/images/webp/logo.webp" type="image/webp">
 
-    <!-- Minimal inline layout to avoid dependency coupling -->
     <style>
         :root {
-            --bg: #0a0a0a;
-            --fg: #eaeaea;
+            --bg: #0b0b0d;
+            --fg: #e6e6e6;
             --muted: #9aa0a6;
             --accent: #6cf;
             --border: #222;
@@ -34,11 +31,16 @@
             line-height: 1.6;
         }
 
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ===== Header / Shortcuts ===== */
         header {
             border-bottom: 1px solid var(--border);
+            background: #0f0f12;
         }
 
-        .wrap {
+        .header-wrap {
             max-width: var(--maxw);
             margin: 0 auto;
             padding: 1.5rem;
@@ -55,165 +57,195 @@
             height: 48px;
         }
 
-        nav a {
-            color: var(--fg);
-            text-decoration: none;
-            margin-right: 1.25rem;
-            font-weight: 500;
+        .shortcuts {
+            margin-top: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
         }
 
-        nav a:hover {
+        .shortcut-btn {
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border);
+            background: #121217;
+            color: var(--fg);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .shortcut-btn:hover {
+            border-color: var(--accent);
             color: var(--accent);
         }
 
-        main section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
+        /* ===== Main Content ===== */
+        main {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
         }
 
-        h1, h2, h3 {
-            font-weight: 600;
-            margin-top: 0;
+        section {
+            margin-bottom: 3.5rem;
         }
 
-        h1 {
-            font-size: 2.4rem;
-        }
+        h1 { font-size: 2.4rem; margin-top: 0; }
+        h2 { font-size: 1.7rem; }
+        h3 { font-size: 1.2rem; }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
+            gap: 1.8rem;
         }
 
         .card {
             border: 1px solid var(--border);
-            padding: 1.5rem;
+            background: #101015;
             border-radius: 8px;
-            background: #0f0f0f;
+            padding: 1.5rem;
         }
 
+        /* ===== Footer (legacy style) ===== */
         footer {
-            color: var(--muted);
+            border-top: 1px solid var(--border);
+            background: #0f0f12;
             font-size: 0.9rem;
-        }
-
-        footer a {
             color: var(--muted);
-            text-decoration: none;
         }
 
-        footer a:hover {
-            color: var(--accent);
+        .footer-container {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-container strong {
+            color: var(--fg);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid var(--border);
         }
     </style>
 </head>
 
 <body>
+
 <header>
-    <div class="wrap">
+    <div class="header-wrap">
         <div class="brand">
             <img src="../../assets/images/webp/logo.webp" alt="FÈUE logo">
             <strong>FÈUE</strong>
         </div>
-        <nav aria-label="Primary">
-            <a href="#mission">Mission</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+        <!-- Shortcut navigation -->
+        <nav class="shortcuts" aria-label="Shortcuts">
+            <button class="shortcut-btn" onclick="location.href='https://feue256.github.io/fss/index.html'">FSS</button>
+            <button class="shortcut-btn" onclick="location.href='https://feue256.github.io/WHEP/index.html'">WHEP</button>
+            <button class="shortcut-btn" onclick="location.href='https://feue256.github.io/cb/index.html'">Cyber::Boot</button>
+            <button class="shortcut-btn" onclick="location.href='./help.html'">Help</button>
+            <button class="shortcut-btn" onclick="location.href='./contact.html'">Contact</button>
         </nav>
     </div>
 </header>
 
-<main class="wrap" id="content">
-    <section id="mission">
+<main id="main">
+    <section>
         <h1>Förenta Evolutionernas Universitets Elektronik</h1>
         <p>
-            FÈUE is an independent research initiative focused on long-term technological
-            development in electronics, operating systems, and theoretical physics.
-            The organization prioritizes rigor, reproducibility, and system-level thinking.
+            FÈUE is an independent research initiative focused on electronics,
+            operating systems, and theoretical physics. The work emphasizes
+            system-level thinking, technical precision, and long-term sustainability.
         </p>
     </section>
 
-    <section id="research">
-        <h2>Research Domains</h2>
+    <section>
+        <h2>Research Areas</h2>
         <div class="grid">
             <div class="card">
                 <h3>Operating Systems</h3>
                 <p>
-                    Low-level system design, service orchestration, and experimental boot
-                    architectures with emphasis on determinism and auditability.
+                    Low-level systems, boot environments, and modular services
+                    with an emphasis on determinism and transparency.
                 </p>
             </div>
             <div class="card">
                 <h3>Theoretical Physics</h3>
                 <p>
-                    Conceptual models and mathematical frameworks, including white hole
-                    dynamics and non-standard cosmological assumptions.
+                    Hypothetical models and mathematical frameworks, including WHEP
+                    and white hole dynamics.
                 </p>
             </div>
             <div class="card">
                 <h3>Electronics</h3>
                 <p>
-                    Hardware–software interaction, firmware boundaries, and minimal
-                    interfaces between computation and physical systems.
+                    The boundary between hardware and software, firmware design,
+                    and controlled execution environments.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section>
         <h2>Active Projects</h2>
         <div class="grid">
             <div class="card">
                 <h3>Fix System Services (FSS)</h3>
-                <p>
-                    A modular service framework designed to operate close to the OS layer,
-                    emphasizing extensibility and controlled execution.
-                </p>
-                <a href="https://feue256.github.io/fss/index.html">Project page</a>
+                <p>A modular framework for OS-adjacent services.</p>
             </div>
             <div class="card">
                 <h3>WHEP</h3>
-                <p>
-                    The White Hole Existence Principle explores hypothetical mechanisms
-                    for white holes and their observable implications.
-                </p>
-                <a href="https://feue256.github.io/WHEP/index.html">Documentation</a>
+                <p>Theoretical research on white holes and cosmology.</p>
             </div>
             <div class="card">
                 <h3>Cyber::Boot</h3>
-                <p>
-                    Experimental boot and system initialization environment, focused on
-                    transparency and minimalism.
-                </p>
-                <a href="https://feue256.github.io/cb/index.html">Overview</a>
+                <p>An experimental boot and system initialization environment.</p>
             </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            General inquiries and collaboration proposals are handled via email.
-        </p>
-        <p>
-            Email: <a href="mailto:feue.com1@outlook.com">feue.com1@outlook.com</a><br>
-            GitHub: <a href="https://github.com/FEUE256" target="_blank" rel="noopener">github.com/FEUE256</a>
-        </p>
     </section>
 </main>
 
 <footer>
-    <div class="wrap">
-        <p>
-            © <span id="year"></span> FÈUE — Förenta Evolutionernas Universitets Elektronik
-        </p>
+    <div class="footer-container">
+        <div>
+            <strong>Contact</strong><br>
+            Email: feue.com1@outlook.com<br>
+            GitHub: <a href="https://github.com/feue256" target="_blank" rel="noopener">github.com/feue256</a><br>
+            TikTok: <a href="https://tiktok.com/@feue256" target="_blank" rel="noopener">FÈUE256</a>
+        </div>
+
+        <div>
+            <strong>Quick Links</strong><br>
+            <a href="https://feue256.github.io/fss/index.html">Fix System Services</a><br>
+            <a href="https://feue256.github.io/WHEP/index.html">WHEP</a><br>
+            <a href="https://feue256.github.io/cb/index.html">Cyber::Boot</a><br>
+            <a href="./help.html">Help</a><br>
+            <a href="./contact.html">Contact</a>
+        </div>
+
+        <div>
+            <strong>Legal</strong><br>
+            <a href="../../LICENSE">License</a><br>
+            <a href="./privacy.html">Privacy Policy</a><br>
+            <a href="./tou.html">Terms of Use</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © <span id="year"></span> FÈUE – Förenta Evolutionernas Universitets Elektronik
     </div>
 </footer>
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
