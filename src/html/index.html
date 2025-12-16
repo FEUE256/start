@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FÈUE – Research & Systems</title>
+    <title>FÈUE – Research, Systems & Theory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <meta name="description" content="FÈUE – advanced research in electronics, operating systems, and theoretical physics.">
+    <meta name="description" content="FÈUE is an independent research initiative in electronics, operating systems, and theoretical physics.">
     <meta name="robots" content="index, follow">
 
     <link rel="icon" href="../../assets/images/webp/logo.webp" type="image/webp">
@@ -28,13 +28,12 @@
             font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
             background: var(--bg);
             color: var(--fg);
-            line-height: 1.6;
+            line-height: 1.75;
         }
 
         a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
 
-        /* ===== Header / Shortcuts ===== */
         header {
             border-bottom: 1px solid var(--border);
             background: #0f0f12;
@@ -79,35 +78,33 @@
             color: var(--accent);
         }
 
-        /* ===== Main Content ===== */
         main {
             max-width: var(--maxw);
             margin: 0 auto;
-            padding: 2.5rem 1.5rem;
+            padding: 3.5rem 1.5rem;
         }
 
         section {
-            margin-bottom: 3.5rem;
+            margin-bottom: 5rem;
         }
 
-        h1 { font-size: 2.4rem; margin-top: 0; }
-        h2 { font-size: 1.7rem; }
-        h3 { font-size: 1.2rem; }
+        h1 { font-size: 2.7rem; margin-top: 0; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.35rem; }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.8rem;
+            gap: 2rem;
         }
 
         .card {
             border: 1px solid var(--border);
             background: #101015;
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 2rem;
         }
 
-        /* ===== Footer (legacy style) ===== */
         footer {
             border-top: 1px solid var(--border);
             background: #0f0f12;
@@ -118,7 +115,7 @@
         .footer-container {
             max-width: var(--maxw);
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 2.5rem 1.5rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
@@ -145,7 +142,6 @@
             <strong>FÈUE</strong>
         </div>
 
-        <!-- Shortcut navigation -->
         <nav class="shortcuts" aria-label="Shortcuts">
             <button class="shortcut-btn" onclick="location.href='https://feue256.github.io/fss/index.html'">FSS</button>
             <button class="shortcut-btn" onclick="location.href='https://feue256.github.io/WHEP/index.html'">WHEP</button>
@@ -157,37 +153,80 @@
 </header>
 
 <main id="main">
+
     <section>
-        <h1>Förenta Evolutionernas Universitets Elektronik</h1>
+        <h1>Förenta Evolutionernas Universitets Elektronik (FÈUE)</h1>
         <p>
-            FÈUE is an independent research initiative focused on electronics,
-            operating systems, and theoretical physics. The work emphasizes
-            system-level thinking, technical precision, and long-term sustainability.
+            FÈUE is an independent research organization dedicated to long-term,
+            system-oriented investigation of computing, electronics, and theoretical
+            physics. The initiative exists to explore ideas that require patience,
+            rigor, and a tolerance for complexity.
+        </p>
+        <p>
+            The work conducted under FÈUE deliberately spans multiple abstraction
+            layers, from firmware and boot environments to high-level theoretical
+            constructs. This allows research to remain internally coherent rather
+            than fragmented across disciplines.
         </p>
     </section>
 
     <section>
-        <h2>Research Areas</h2>
+        <h2>Mission and Scope</h2>
+        <p>
+            The mission of FÈUE is to design, document, and analyze systems that
+            challenge conventional assumptions about how technology should be
+            structured. This includes questioning default architectures, examining
+            edge cases, and formalizing behaviors that are usually left implicit.
+        </p>
+        <p>
+            FÈUE is not driven by commercial timelines. Instead, it prioritizes
+            conceptual clarity, correctness, and traceability of decisions.
+        </p>
+    </section>
+
+    <section>
+        <h2>Research Philosophy</h2>
+        <p>
+            Research at FÈUE follows a systems-first methodology. Each component
+            is evaluated not only in isolation but in terms of its interaction
+            with surrounding layers, interfaces, and failure modes.
+        </p>
+        <p>
+            Experimental ideas are clearly separated from established mechanisms.
+            Hypotheses are treated as provisional and are revised when evidence,
+            reasoning, or internal consistency demands it.
+        </p>
+    </section>
+
+    <section>
+        <h2>Core Research Areas</h2>
         <div class="grid">
             <div class="card">
-                <h3>Operating Systems</h3>
+                <h3>Operating Systems & Boot Architecture</h3>
                 <p>
-                    Low-level systems, boot environments, and modular services
-                    with an emphasis on determinism and transparency.
+                    Research includes experimental boot flows, minimal initialization
+                    environments, and OS-adjacent service frameworks. Particular focus
+                    is placed on determinism, auditability, and explicit state
+                    transitions during early system execution.
                 </p>
             </div>
+
             <div class="card">
                 <h3>Theoretical Physics</h3>
                 <p>
-                    Hypothetical models and mathematical frameworks, including WHEP
-                    and white hole dynamics.
+                    FÈUE develops speculative yet formally structured theoretical
+                    models, including research on white holes and non-standard
+                    cosmological assumptions. These models are presented as
+                    working theories rather than claims of physical truth.
                 </p>
             </div>
+
             <div class="card">
-                <h3>Electronics</h3>
+                <h3>Electronics & Firmware</h3>
                 <p>
-                    The boundary between hardware and software, firmware design,
-                    and controlled execution environments.
+                    Investigation of hardware–software boundaries, firmware behavior,
+                    and controlled execution environments. Emphasis is placed on
+                    transparency and well-defined interfaces.
                 </p>
             </div>
         </div>
@@ -198,18 +237,60 @@
         <div class="grid">
             <div class="card">
                 <h3>Fix System Services (FSS)</h3>
-                <p>A modular framework for OS-adjacent services.</p>
+                <p>
+                    A modular framework designed to operate close to the operating
+                    system layer. FSS focuses on controlled extensibility, explicit
+                    service lifecycles, and predictable behavior.
+                </p>
             </div>
+
             <div class="card">
                 <h3>WHEP</h3>
-                <p>Theoretical research on white holes and cosmology.</p>
+                <p>
+                    The White Hole Existence Principle explores hypothetical mechanisms
+                    for white holes and their possible implications within a consistent
+                    theoretical framework.
+                </p>
             </div>
+
             <div class="card">
                 <h3>Cyber::Boot</h3>
-                <p>An experimental boot and system initialization environment.</p>
+                <p>
+                    An experimental boot and initialization environment intended to
+                    reduce opacity in early system execution and expose system state
+                    transitions explicitly.
+                </p>
             </div>
         </div>
     </section>
+
+    <section>
+        <h2>Documentation and Transparency</h2>
+        <p>
+            All major projects under FÈUE are accompanied by structured documentation.
+            Design decisions, assumptions, and limitations are explicitly recorded
+            to enable long-term understanding and external review.
+        </p>
+        <p>
+            This approach ensures that future contributors can reconstruct not only
+            how a system works, but why it was designed in a particular way.
+        </p>
+    </section>
+
+    <section>
+        <h2>Collaboration and Contributions</h2>
+        <p>
+            FÈUE welcomes collaboration from individuals and groups who share an
+            interest in deep technical work and theoretical exploration. Contributions
+            are evaluated based on clarity, rigor, and alignment with the organization’s
+            research philosophy.
+        </p>
+        <p>
+            External input is encouraged when it strengthens internal consistency
+            and expands the analytical scope of ongoing projects.
+        </p>
+    </section>
+
 </main>
 
 <footer>
@@ -243,9 +324,4 @@
     </div>
 </footer>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+<script
